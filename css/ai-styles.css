@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pirata One', cursive;
+    background-color: #0b4d91; /* Deep sea blue */
+    color: #f0f0f0;
+    overflow-x: hidden; /* Hide vertical scrollbar */
+    overflow-y: hidden; /* Hide horizontal scrollbar */
+}
+
+.treasure-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.treasure-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2; /* Map opacity to blend with the background */
+}
+
+.menu-container {
+    width: 100%;
+    overflow: hidden; /* Hide horizontal scrollbar */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Set the menu container to full viewport height */
+}
+
+.menu {
+    display: flex;
+    width: 400%; /* 5 cards, each taking 80% of the width */
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap; /* Prevent card wrapping */
+    transform: translateX(0%); /* Initially, don't shift the menu */
+    position: relative; /* Added position for animations */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.menu-card {
+    flex: 1;
+    min-width: 80%; /* Each card takes 80% of the viewport width */
+    max-width: 80%; /* Maximum width to ensure only one card is fully visible */
+    height: 320px; /* Reduced height to fit the viewport better */
+    margin: 0 10px; /* Adjusted margin between cards */
+    padding: 20px;
+    background-color: #8b4513; /* Brown like a pirate's wooden leg */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 18px;
+    overflow: hidden;
+    transform-origin: center; /* Set transform origin for animations */
+}
+
+.menu-card:nth-child(1) { background-color: #4a90e2; } /* Home */
+.menu-card:nth-child(2) { background-color: #ffcc00; } /* Qualifications */
+.menu-card:nth-child(3) { background-color: #ff9900; } /* Portfolio */
+.menu-card:nth-child(4) { background-color: #ff6666; } /* Service */
+.menu-card:nth-child(5) { background-color: #00cc99; } /* AI-Generated */
+
+.menu-card:hover {
+    transform: scale(1.1) rotate(3deg); /* Scale and rotate on hover */
+    z-index: 1; /* Bring the hovered card to the front */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Adjusted shadow */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
