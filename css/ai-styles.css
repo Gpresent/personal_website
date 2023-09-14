@@ -80,3 +80,25 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+/* Style for the prompts textarea */
+.prompts-container {
+    margin: 20px auto; /* Adjust margin as needed */
+    text-align: center; /* Center-align the textarea */
+    position: absolute; /* Position it absolutely */
+    top: 10%; /* Adjust the top position as needed */
+    left: 10%; /* Adjust the left position as needed */
+    right: 10%; /* Adjust the right position as needed */
+    z-index: 999; /* Bring it to the front */
+}
+
+#prompts {
+    width: 100%; /* 100% width within its container */
+    min-height: 100px; /* Minimum height for visibility */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border: 2px solid #fff; /* White border */
+    border-radius: 10px;
+    color: #f0f0f0;
+    font-size: 16px;
+}

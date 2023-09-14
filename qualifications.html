@@ -4,15 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qualifications</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Cole Broberg</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src=""></script>
 </head>
 
-<body>
-    <object data="Resume.pdf" type="application/pdf">
-        <p>It appears you don't have a PDF plugin for this browser.
-            No biggie... you can <a href="Resume.pdf">click here to
-                download the PDF file.</a></p>
+<body class="qualifications_page">
+    <div class="header" id="top">
+        <div class="logo">
+            <h1>Cole Broberg</h1>
+        </div>
+        <div class="menu">
+            <div class="menu-row">
+                <div class="menu-col" id="home">
+                    <a href="index.html">
+                        <h3>Home</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="qualifications">
+                    <a href="qualifications.html">
+                        <h3>Qualifications</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="portfolio">
+                    <a href="portfolio.html">
+                        <h3>Portfolio</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="service">
+                    <a href="service.html">
+                        <h3>Service</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="ai-gen">
+                    <a href="ai-gen.html">
+                        <h3>AI-Generated</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p>Qualifications</p>
+        <a href="#content"><img src="images/arrow.svg" alt="Down arrow" id="d_arrow"></a>
+    </div>
+
+    <div class="info" id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-1" id="description">
+                    <object data="Resume.pdf" type="application/pdf" id="resume">
+                        <p>Unable to display pdf. <a href="Resume.pdf">Download</a> instead.</p>
+                    </object>
+                </div>
+                <div class="col-2">
+                    <p>As a programmer, I'm committed to building efficient and robust code that saves valuable time for
+                        its users. My computer science education thus far has given me skills in
+                        <i id="special_text">C++</i>, <i id="special_text">C</i>, <i id="special_text">Python
+                        </i>, <i id="special_text">Java</i>, <i id="special_text">Hack Assembly</i>, <i
+                            id="special_text">HTML</i>, <i id="special_text">JavaScript</i>, <i id="special_text">
+                            TypeScript</i>
+                        <i id="special_text">CSS</i>, <i id="special_text">Octave</i>, and more. I have experience
+                        working on large codebases through my research, in which I am building graph generators like the
+                        <a href="https://en.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model" target="blank"
+                            id="profile">Barabási-Albert Graph</a> using <a
+                            href="https://en.wikipedia.org/wiki/Xorshift" target="blank" id="profile">Xorshift Random
+                            Number Generators</a>.
+                    </p>
+                    <p>
+                        My area of focus in computer science is still undecided, but I am especially interested in
+                        algorithm design and artificial intelligence. My research advisor, <a
+                            href="https://engineering.tamu.edu/cse/profiles/davis-tim.html" id="profile"
+                            target="blank">Tim Davis</a>, was my
+                        professor for CSCE 411, Design and Analysis of Algorithms, and he showed me how fun designing
+                        algorithms that blow basic code out of the water in terms of speed can be. He is also the
+                        creator of <a href="https://github.com/DrTimothyAldenDavis/GraphBLAS" id="profile"
+                            target="blank">SuiteSparse:GraphBLAS</a>
+                        and <a href="https://github.com/GraphBLAS/LAGraph" id="profile" target="blank">LAGraph</a>, the
+                        latter of which being the
+                        focus of my research. I am also interested in artificial intelligence, and I am currently taking
+                        CSCE 420, Artificial Intelligence, with <a
+                            href="https://engineering.tamu.edu/cse/profiles/tioerger.html" id="profile"
+                            target="blank">Thomas Ioerger</a>. I am
+                        excited to learn more about AI, and the class seems like the perfect opportunity for the kind of
+                        tinkering that makes Computer Science so fun.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#top" id="u_arrow_container"><img src="images/arrow.svg" alt="Up arrow" id="u_arrow"></a>
+    </div>
 </body>
 
 </html>

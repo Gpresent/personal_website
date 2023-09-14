@@ -31,10 +31,85 @@ body::-webkit-scrollbar {
     position: relative;
     top: 0;
     z-index: 100;
-    background: url('../images/DSC04094.jpg'), linear-gradient(rgba(0,0,0,0), #131316);
+}
+.home_page .header {
+    background: url('../images/DSC04094.jpg'), linear-gradient(rgba(2,0,36,0) 0%, rgba(19,19,22,0.711922268907563) 84%, rgba(19,19,22,1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
+    background-blend-mode: hue;
+}
+.portfolio_page .header {
+    background: url('../images/code_img.png'), linear-gradient(rgba(2,0,36,0) 0%, rgba(19,19,22,0.711922268907563) 84%, rgba(19,19,22,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hue;
+}
+.qualifications_page .header {
+    background: url('../images/Hase_Dera_Temple_crop.JPG'), linear-gradient(rgba(2,0,36,0) 0%, rgba(19,19,22,0.711922268907563) 84%, rgba(19,19,22,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hue;
+}
+.service_page .header {
+    background: url('../images/Cole.JPG'), linear-gradient(rgba(2,0,36,0) 0%, rgba(19,19,22,0.711922268907563) 84%, rgba(19,19,22,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hue;
+}
+#project {
+    position:relative;
+}
+.portfolio_page #description {
+    display: grid;
+    opacity: 0;
+    z-index: 201;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.portfolio_page #project:hover #description {
+    opacity: 1;
+}
+.service_page #description {
+    display: grid;
+    opacity: 0;
+    z-index: 201;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.service_page #project:hover #description {
+    opacity: 1;
+}
+
+#description_text {
+    display: grid;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+}
+
+
+img#project-img {
+    width: 30vw;
+    height: 22vw;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.8);
 }
 h1 {
     font-family: 'Meow Script', cursive;
@@ -156,6 +231,7 @@ h3 {
 #u_arrow_container {
     display: block;
     height:max-content;
+    padding: 2% 0
 }
 #u_arrow {
     rotate: 180deg;
@@ -164,10 +240,35 @@ h3 {
     margin-right: auto;
 }
 
+#resume{
+    height: 75vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+i {
+    text-decoration: none;
+    display: inline-block;
+    text-emphasis: none;
+    color: #b85252;
+    font-style: normal;
+}
+
+a#profile {
+    color: #96e195;
+    text-decoration: none;
+    display: inline;
+    font-size: 1.5rem;
+    text-align:left;
+
+}
+
 #cole {
     width: 30vw;
     height: auto;
     object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.8);
 }
 
 p {
