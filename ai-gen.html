@@ -13,20 +13,13 @@
     <div class="treasure-map">
         <img src="images/treasure-map.jpeg" alt="Treasure Map" class="treasure-img">
     </div>
-    <div class="menu-container">
-        <div class="menu">
-            <a class="menu-card" href="index.html">🏴‍☠️ Home</a>
-            <a class="menu-card" href="qualifications.html">🏴‍☠️ Qualifications</a>
-            <a class="menu-card" href="portfolio.html">🏴‍☠️ Portfolio</a>
-            <a class="menu-card" href="service.html">🏴‍☠️ Service</a>
-            <a class="menu-card" href="#">🏴‍☠️ AI-Generated</a>
-        </div>
-    </div>
-    <script src="scripts/ai-script.js"></script>
+    <div class="flex-container">
 
-    <!-- Add a text box for prompts and pre-fill it -->
-    <div class="prompts-container">
-        <textarea id="prompts" rows="15" cols="50">
+        <!-- Move the prompts outside of the menu container -->
+        <div class="prompts-container">
+            <p>Welcome to our web development journey!</p>
+            <p>Below is a list of prompts that guided the creation of this website:</p>
+            <textarea id="prompts" rows="15" cols="50" readonly>
 1. Design a website with the following pages: Home, Qualifications, Portfolio, Service, AI-Generated. The website should have a navigation menu.
 
 2. Create an animated rotating menu using HTML, CSS, and JavaScript. The menu should be in the shape of a pentagon and rotate left when the mouse cursor is in the left third of the screen and right when it's in the right third. The menu should contain links to different pages.
@@ -41,8 +34,20 @@
 
 7. Update the page to include a textarea for prompts. The textarea should contain a detailed transcript of the prompts used, providing a clear record of the development process.
         </textarea>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu">
+                <a class="menu-card" href="index.html">🏴‍☠️ Home</a>
+                <a class="menu-card" href="qualifications.html">🏴‍☠️ Qualifications</a>
+                <a class="menu-card" href="portfolio.html">🏴‍☠️ Portfolio</a>
+                <a class="menu-card" href="service.html">🏴‍☠️ Service</a>
+                <a class="menu-card" href="#">🏴‍☠️ AI-Generated</a>
+            </div>
+        </div>
     </div>
 
+    <script src="scripts/ai-script.js"></script>
     <!-- Your script here -->
 </body>
 

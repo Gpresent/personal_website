@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cole Broberg</title>
-  <link type="text/css" rel="stylesheet" href="css/style.css">
-  <script src="scripts/script.ts"></script>
+  <link id="theme-link" type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="home_page">
   <div class="header" id="top">
     <div class="logo">
       <h1>Cole Broberg</h1>
+      <p id="theme-toggle">change theme</p>
     </div>
     <div class="menu">
       <div class="menu-row">
@@ -43,8 +43,8 @@
         </div>
       </div>
     </div>
-    <p>About me</p>
-    <a href="#content"><img src="images/arrow.svg" alt="Down arrow" id="d_arrow"></a>
+    <p id="content-title">About me</p>
+    <a id="arrow" href="#content"><img src="images/arrow.svg" alt="Down arrow" id="d_arrow"></a>
   </div>
 
   <div class="info" id="content">
@@ -52,19 +52,25 @@
       <div class="row">
         <div class="col-1" id="description">
           <p>Hi, I'm Cole Broberg. I grew up in Dallas, TX, in a neighborhood called Lakewood (it is, indeed, by a
-            lake). I didn't do any development until I hit high school, when in 10th grade I took AP Computer Science.
-            The class opened my eyes to the possibilities offered by the field of computer science and the infinite
-            creativity that coding can unleash. My school didn't offer any prograssion in computer science beyond AP
-            Comp Sci, but I knew that I wanted to pursue it in university. <br><br>
+            lake). I took a liking to STEM very early on, getting involved with TMSCA Math Team in fourth grade and
+            winning the school-wide math competition every year. In middle school, my experience with Math Team
+            reached its height under a great coach and mentor of mine, Juan Fernandez. <br><br>
+            By the time I entered high school, while I chose to enter the International Baccalaureate program, I knew
+            that I wanted to work in the STEM world. My experience with coding was minimal until I hit high school, when
+            (in 10th grade) I took AP Computer Science. The class opened my eyes to the possibilities offered by the
+            field of computer science and the infinite creativity that coding can unleash. My school, Woodrow Wilson
+            High School, didn't offer any prograssion beyond AP Comp Sci, but I was certain that I wanted to pursue it
+            in university. <br><br>
             As a Engineering Honors student at Texas A&M, I've now taken Computer Science classes from the 100 to the
             400 level, become a peer teacher for intro to C++, Discrete Mathematics, and Data Sctructures and
-            Algorithms,
-            begun research on graph algorithms with professor Tim Davis, and found many wonderful friends and comrades
-            along the way. <br><br>
-            As a junior in Computer Science, the bug (pun intended) to get industry experience is pulling tighly at me,
-            and I'm itching to see how the skills I've honed in the classroom and out of it will allow me to thrive in
-            the workforce. My Computer Science journey is just beginning, and there's always more to learn. I'm looking
-            forward to every moment of it.</p>
+            Algorithms, begun research on graph algorithms with professor Tim Davis, and found many wonderful friends
+            and comrades along the way. <br><br>
+            I'm now a junior in Computer Science, the bug (pun intended) to get industry experience is pulling tighly at
+            me, and I'm itching to see how the skills I've honed in the classroom and out of it will allow me to thrive
+            in
+            the workforce. I have three semesters remaining before graduation from A&M, and I'm planning on rounding out
+            the next two years with an internship and co-op. My Computer Science journey is just beginning, and there's
+            always more to learn. I'm looking forward to every moment of it.</p>
         </div>
         <div class="col-2">
           <img src="images/ColeBroberg.jpg" alt="Cole Broberg" id="cole">
@@ -73,6 +79,7 @@
     </div>
     <a href="#top" id="u_arrow_container"><img src="images/arrow.svg" alt="Up arrow" id="u_arrow"></a>
   </div>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

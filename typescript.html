@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole Broberg</title>
+    <link id="theme-link" type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="ts_page">
+    <div class="header" id="top">
+        <div class="logo">
+            <h1>Cole Broberg</h1>
+            <p id="theme-toggle">change theme</p>
+        </div>
+        <div class="menu">
+            <div class="menu-row">
+                <div class="menu-col" id="home">
+                    <a href="index.html">
+                        <h3>Home</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="qualifications">
+                    <a href="qualifications.html">
+                        <h3>Qualifications</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="portfolio">
+                    <a href="portfolio.html">
+                        <h3>Portfolio</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="service">
+                    <a href="service.html">
+                        <h3>Service</h3>
+                    </a>
+                </div>
+                <div class="menu-col" id="ai-gen">
+                    <a href="ai-gen.html">
+                        <h3>AI-Generated</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p id="content-title">Typescript</p>
+        <a id="arrow" href="#content"><img src="images/arrow.svg" alt="Down arrow" id="d_arrow"></a>
+    </div>
+
+    <div class="info" id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-1" id="description">
+                    <p>Typescript is a high level scripting language for web development that adds static types and type
+                        declarations to Javascript. Other than the typing system which Javascript doesn't support, there
+                        is no difference in how the languages are written. Typescript has the advantage of being
+                        stricter with its rules than Javascript, which means that accidental errors and bugs can be
+                        easier to spot. </p>
+                    <p>When compiling a typescript page (the extension is .ts), the compiler will check for any objects
+                        that have been declared explicitly or implicitly (by assignment) to be one type and are later
+                        assigned an object of a different type. This overwriting of variables is a common error for
+                        those writing in Javascript, since variables are declared and overwritten without ever
+                        specifying a type. </p>
+                    <p>Because a Typescript file must be a working javascript program with the addition of static types,
+                        the typescript compiler only has to remove type-related information and check for agreement of
+                        types. Then, the file is simply copied and renamed to {filename}.js. </p>
+                </div>
+                <div class="col-2">
+                    <img src="images/typescript_logo.png" alt="Cole Broberg" id="cole">
+                </div>
+            </div>
+        </div>
+        <a href="#top" id="u_arrow_container"><img src="images/arrow.svg" alt="Up arrow" id="u_arrow"></a>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

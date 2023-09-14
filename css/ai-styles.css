@@ -8,6 +8,13 @@ body {
     overflow-y: hidden; /* Hide horizontal scrollbar */
 }
 
+/* Create a flexbox layout to separate the text box and menu vertically */
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align content horizontally */
+}
+
 .treasure-map {
     position: absolute;
     top: 0;
@@ -25,12 +32,13 @@ body {
 }
 
 .menu-container {
+    max-height: 50vh; /* Set a maximum height of 50% of the viewport height */
+    overflow-y: visible; /* Add vertical scrollbar if needed */
+    margin: 10px; /* Adjust margin as needed */
     width: 100%;
-    overflow: hidden; /* Hide horizontal scrollbar */
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
-    height: 100vh; /* Set the menu container to full viewport height */
 }
 
 .menu {
@@ -45,9 +53,10 @@ body {
 
 .menu-card {
     flex: 1;
+    overflow-y: visible;
     min-width: 80%; /* Each card takes 80% of the viewport width */
     max-width: 80%; /* Maximum width to ensure only one card is fully visible */
-    height: 320px; /* Reduced height to fit the viewport better */
+    height: 300px; /* Reduced height to fit the viewport better */
     margin: 0 10px; /* Adjusted margin between cards */
     padding: 20px;
     background-color: #8b4513; /* Brown like a pirate's wooden leg */
@@ -60,7 +69,7 @@ body {
     text-decoration: none;
     color: #f0f0f0;
     font-size: 18px;
-    overflow: hidden;
+    overflow-x: hidden;
     transform-origin: center; /* Set transform origin for animations */
 }
 
@@ -72,7 +81,7 @@ body {
 
 .menu-card:hover {
     transform: scale(1.1) rotate(3deg); /* Scale and rotate on hover */
-    z-index: 1; /* Bring the hovered card to the front */
+    z-index: 2; /* Bring the hovered card to the front */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Adjusted shadow */
 }
 
@@ -81,24 +90,29 @@ body {
     to { opacity: 1; }
 }
 
-/* Style for the prompts textarea */
+/* Style for the prompts container */
 .prompts-container {
-    margin: 20px auto; /* Adjust margin as needed */
-    text-align: center; /* Center-align the textarea */
-    position: absolute; /* Position it absolutely */
-    top: 10%; /* Adjust the top position as needed */
-    left: 10%; /* Adjust the left position as needed */
-    right: 10%; /* Adjust the right position as needed */
-    z-index: 999; /* Bring it to the front */
+    max-height: 50vh; /* Set a maximum height of 50% of the viewport height */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    margin: 10px; /* Adjust margin as needed */
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #f0f0f0;
+    font-size: 16px;
+    overflow-x: hidden;
 }
 
 #prompts {
-    width: 100%; /* 100% width within its container */
+    width: 95%; /* 100% width within its container */
     min-height: 100px; /* Minimum height for visibility */
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
     border: 2px solid #fff; /* White border */
     border-radius: 10px;
     color: #f0f0f0;
-    font-size: 16px;
+    font-size: 14px;
+    overflow-x: hidden;
 }
