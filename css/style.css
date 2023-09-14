@@ -103,10 +103,14 @@ body::-webkit-scrollbar {
     margin: 5%;
 }
 
+#description_text p, h2 {
+    font-size: 1.1vw;
+}
+
 
 img#project-img {
-    width: 30vw;
-    height: 22vw;
+    width: 35vw;
+    height: 25vw;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.8);
@@ -261,6 +265,9 @@ a#profile {
     font-size: 1.5rem;
     text-align:left;
 
+}
+#description a#profile {
+    font-size: 1.1vw;
 }
 
 #cole {
